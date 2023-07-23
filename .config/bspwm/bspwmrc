@@ -7,6 +7,7 @@ nitrogen --set-zoom-fill --random ~/Wallpapers --head=1 &
 picom &
 pgrep -x polybar acer > /dev/null || polybar acer &
 pgrep -x polybar phil > /dev/null || polybar phil &
+ntfd &
 
 bspc monitor HDMI-A-0 -d www dev chat
 bspc monitor HDMI-A-1-1 -d sec rec 
