@@ -1,0 +1,3 @@
+#!/bin/bash
+maim /tmp/recent-screenshot.png
+xclip -sel clip -t image/png -i /tmp/recent-screenshot.png
