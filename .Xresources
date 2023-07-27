@@ -105,19 +105,19 @@ URxvt.keysym.Control-Left: \033[1;5D
 !! EXTENSIONS
 
 ! copy-paste
-# URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
-# URxvt.copyCommand: xclip -i -selection clipboard
-# URxvt.pasteCommand: xclip -o -selection clipboard
-# URxvt.keysym.M-c: perl:clipboard:copy
-# URxvt.keysym.M-v: perl:clipboard:paste
-# URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+! URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+! URxvt.copyCommand: xclip -i -selection clipboard
+! URxvt.pasteCommand: xclip -o -selection clipboard
+! URxvt.keysym.M-c: perl:clipboard:copy
+! URxvt.keysym.M-v: perl:clipboard:paste
+! URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 
 ! keyboard select
-# URxvt.keysym.M-Escape: perl:keyboard-select:activate
-# URxvt.keysym.M-s: perl:keyboard-select:search
+! URxvt.keysym.M-Escape: perl:keyboard-select:activate
+! URxvt.keysym.M-s: perl:keyboard-select:search
 
 ! urls
-# URxvt.keysym.M-u: perl:url-select:selext-next
-# URxvt.urlLauncher: firefox
-# URxvt.underlineURLs: true
-# URxvt.urlButton: 1
+! URxvt.keysym.M-u: perl:url-select:selext-next
+! URxvt.urlLauncher: firefox
+! URxvt.underlineURLs: true
+! URxvt.urlButton: 1
