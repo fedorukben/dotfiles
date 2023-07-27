@@ -1,23 +1,36 @@
 # terminal emulator
 super + Return
-	urxvt; \
-	mpv --no-video ~/.sfx/terminal.mp3	
+	mpv --no-video ~/.sfx/terminal.mp3 & \
+	urxvt &
+
+# toggle scratchpad
+super + shift + Return
+	sh $HOME/.config/bspwm/scpad/scpad
 
 # program launcher
 super + @space
-	dmenu_run
+	mpv --no-video ~/.sfx/launch.mp3 & \
+	dmenu_run &
+
+# dmenu scripts
+super + p
+	mpv --no-video ~/.sfx/launch.mp3 & \
+	sh $HOME/.config/dmenu/scripts/dmenudmenu	
 
 #make sxhkd reload its configuration files
 super + Escape
-	pkill -USR1 -x sxhkd
+	mpv --no-video ~/.sfx/sysreload.mp3 & \	
+	pkill -USR1 -x sxhkd &
 
 # quit/restart bspwm
 super + alt + {q,r}
-	bspc {quit,wm -r}
+	mpv --no-video ~/.sfx/welcome.mp3 & \
+	bspc {quit,wm -r} &
 
 # close and kill
 super + {_,shift + }w
-	bspc node -{c,k}
+	mpv --no-video ~/.sfx/close.mp3 & \
+	bspc node -{c,k} &
 
 # alternate between the tiled and monocle layout
 super + m
@@ -67,11 +80,13 @@ super + {_,shift + }{1-9,0}
 
 # preselect the direction
 super + ctrl + {h,j,k,l}
-	bspc node -p {west,south,north,east}
+	mpv --no-video ~/.sfx/nodeop.mp3 & \
+	bspc node -p {west,south,north,east} &
 
 # preselect the ratio
 super + ctrl + {1-9}
-	bspc node -o 0.{1-9}
+	mpv --no-video ~/.sfx/nodeop.mp3 & \
+	bspc node -o 0.{1-9} &
 
 # cancel the preselection for the focused node
 super + ctrl + space
@@ -92,3 +107,4 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
