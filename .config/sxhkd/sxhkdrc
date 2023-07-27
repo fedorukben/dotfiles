@@ -1,6 +1,7 @@
 # terminal emulator
 super + Return
-	urxvt
+	urxvt; \
+	mpv --no-video ~/.sfx/terminal.mp3	
 
 # program launcher
 super + @space
@@ -31,7 +32,7 @@ super + g
 	bspc node -s biggest.window
 
 # set the whole window state
-super + {tshift + t,s,f}
+super + {t,shift + t,s,f}
 	bspc node -t {tiled, pseudo_tiled,floating,fullscreen}
 
 # set the node flags
